@@ -1,0 +1,47 @@
+<body>
+<h1>The Zen of Zen Garden</h1>
+<p><a href="http://www.csszengarden.com/"><b>Zen Garden</b></a> is a website dedicated to demonstrating the flexibility of the CSS design. <br />
+It allows you to download example files of both the HTML and the CSS or fork the site in Github. In the samples on the website, <br />
+the HTML does not change, only the CSS. Zen Garden invites users to practice and play with the CSS file. Users are invited to submit <br />
+their designs to Zen Garden. The site requests that the CSS used should be <q>widely-supported elements only</q> and that the user tests <br />
+their design across a variety of web browsers. For those users needing more information on how CSS works, the page offers a link to <br />
+<q>CSS Resources</q>. Zen Garden is interesting in much the way our last assignment was. The HTML stays the same while the CSS creates an <br />
+infinite amount possible designs.</p>
+
+<p> The readings in Duckett focused on layout and overall design of websites in alignment with Zen Garden and its focus on how CSS can <br />
+create interesting and functional websites. Positioning schemes such as absolute positioning can be seen in the fixed bottom elements<br />
+in the example <a href="http://www.csszengarden.com/213/">Under the Sea by Eric Stoltz</a>. <br />
+Use of a footer in <a href="http://www.csszengarden.com/206/"> A Walk in the Garden by Simon Van Hauwermeiren</a>. <br />
+And the multitude of uses of borders, margins, and padding.</p>
+    
+<p> One of my favorite layouts was <a href="http://www.csszengarden.com/218/"> Apothecary by Trent Walton</a>. I liked that there <br />
+was an overall muted palette with bright splashed of color in just a few locations. The bright color of the links made them easy to <br />
+locate. I also liked the historic look of a broadsheet of the overall site and the vintage clipart.
+    
+</p>
+    
+<p> In several places, the Apothecary layout takes advantage of the postion:absolute.One of these was after <q>view all designs<q><br />
+    <blockquote>.design-archives .previous a, .design-archives .next a {
+  position: absolute;
+  overflow: hidden;
+  width: 2em;
+  height: 1.25em;
+  color: #3f3d3a;
+  text-decoration: none;
+  white-space: nowrap;
+  text-indent: -9999px; </blockquote></p>
+    
+    <p> Additionally, the layout uses 30 instances of :after, which allows things to be inserted after an element. In Apothecary,<br />
+    the creator used it for some of the graphics, for example, after the <q>ul</q> list which ends with <q>translations</q>, the CSS includes: <br />
+    <blockquote>.zen-resources <b>ul:after</b> {
+    margin-top: 3em;
+    background: #bad1c2 url('img-halftone.png') repeat;
+     -webkit-transform: rotate(45deg) translateY(4.75em) translateX(9em);
+       -moz-transform: rotate(45deg) translateY(4.75em) translateX(9em);
+        -ms-transform: rotate(45deg) translateY(4.75em) translateX(9em);
+         -o-transform: rotate(45deg) translateY(4.75em) translateX(9em);
+            transform: rotate(45deg) translateY(4.75em) translateX(9em);
+    margin-bottom: -52.5em; </blockquote>
+    Read more about how to use <a href="w3schools.com/cssref/sel_after.asp"><b> :after </b>at w3schools</a>.
+    </p>
+</body>
